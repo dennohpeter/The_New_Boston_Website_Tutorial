@@ -7,13 +7,13 @@
 <body>
   {% if all_albums %}
   <ul>
-    <h2>Here are all my Albums.</h2>
+    <h2>Here are all my Albums:</h2>
     {% for album in all_albums %}
     <li><a href="/music/{{ album.id }}/"> {{ album.album_title }}</a></li>
     {% endfor %}
   </ul>
   {% else %}
-  <<h3>You don't have any album </h3>
+  <h3>You don't have any album </h3>
   {% endif %}
 </body>
 </html>
